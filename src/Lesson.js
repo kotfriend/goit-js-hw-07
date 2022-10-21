@@ -86,7 +86,7 @@ const removeListenerBtn = document.querySelector(".js-remove-listener");
 // };
 
 const handClick = () => {
-  console.log("");
+  console.log("CLICK!!!");
 };
 
 // targetBtn.addEventListener("click", handClick);

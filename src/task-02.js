@@ -10,17 +10,17 @@ const ingredients = [
 const ulList = document.querySelector("#ingredients");
 
 //=====my solution =====
-// ingredients.forEach((item) => {
-//   const itemList = document.createElement("li");
-//   itemList.textContent = item;
-//   ulList.appendChild(itemList);
-// });
-
-//=======Olha solution======
-const itemLists = ingredients.map((item) => {
+ingredients.forEach((item) => {
   const itemList = document.createElement("li");
   itemList.textContent = item;
-  return itemList;
+  ulList.appendChild(itemList);
 });
 
-ulList.append(...itemLists);
+//=======Olha solution======
+// const itemLists = ingredients.map((item) => {
+//   const itemList = document.createElement("li");
+//   itemList.textContent = item;
+//   return itemList;
+// });
+
+// ulList.append(...itemLists);

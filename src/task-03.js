@@ -12,3 +12,29 @@ const images = [
     alt: "Group of Horses Running",
   },
 ];
+
+// -====== my solution =====
+const gallery = document.querySelector("#gallery");
+gallery.classList.add("gallary");
+
+images.forEach((item) => {
+  gallery.insertAdjacentHTML(
+    "afterbegin",
+    `<li class="gallery-item"><img class="gallery-img" src="${item.url}" alt="${item.alt}"></li>`
+  );
+});
+
+//====== Olha solution ======
+// const gallery = document.querySelector("#gallery");
+// gallery.classList.add("gallery");
+
+// const newImageObject = ({ url, alt }) => {
+//   return `
+//   <li class="gallery-item">
+//   <img class="gallery-img" src="${url}" alt="${alt}"
+//   </li>
+//   `;
+// };
+// const newImage = images.map(newImageObject).join("");
+
+// gallery.insertAdjacentHTML("afterbegin", newImage);
